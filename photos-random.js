@@ -32,7 +32,7 @@ function idAleatorio(){
 
 function mostrarFotoHTML(id){
 	var element = document.getElementById(id);
-	element.style.visibility = 'visible';
+	element.style.display = 'inline';
 }
 
 function mostrar(){
