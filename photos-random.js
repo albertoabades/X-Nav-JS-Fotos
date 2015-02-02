@@ -21,3 +21,21 @@ function substituir(){
 	var foto=valorAleatorio();
 	cambiarFotoJS('imagen',foto);
 }
+
+function idAleatorio(){
+	var indice = Math.random()*(arrayFotos.length-1);
+	indice = Math.round(indice);
+	indice = parseInt(0) + indice;
+	var idAleat = "imagen"+indice;
+	return idAleat;
+}
+
+function mostrarFotoHTML(id){
+	var element = document.getElementById(id);
+	element.style.visibility = 'visible';
+}
+
+function mostrar(){
+	var foto=idAleatorio();
+	mostrarFotoHTML(foto);
+}
